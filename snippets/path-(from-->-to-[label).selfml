@@ -1,0 +1,8 @@
+(name `path (from -> to [label)`)
+
+(trigger
+    (tab path))
+
+(only-in source.dot)
+
+(snippet [%{1="From"} -> %{2="too"} [label="%{3=".7"}";]])

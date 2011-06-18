@@ -1,0 +1,8 @@
+(name [PROPerty [styles...]])
+
+(trigger
+    (tab prop))
+
+(only-in source.dot)
+
+(snippet [[style=dotted; color=red; style=bold,label="100 times"; weight=8]])

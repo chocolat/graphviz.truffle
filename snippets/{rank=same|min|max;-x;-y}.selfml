@@ -1,0 +1,9 @@
+(name [{rank=same|min|max; x; y}])
+
+(trigger
+    (tab rank))
+
+(only-in source.dot)
+
+(snippet [{rank=%{1="same|min|max"}; %{2}; %{3}}; /* max is bottom */
+])

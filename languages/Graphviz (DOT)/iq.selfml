@@ -1,0 +1,31 @@
+(detector
+    (extension dot)
+    (extension DOT))
+
+(detector
+    (content-matches digraph.*))
+
+(folding
+    (start [\{])
+    (stop [\}]))
+
+(pair "
+    "
+    (smart-typing))
+
+(pair <
+    >
+    (smart-typing)
+    (highlight))
+
+(pair `[`
+    `]`
+    (smart-typing)
+    (highlight))
+
+(pair [{]
+    [}]
+    (smart-typing)
+    (highlight))
+
+(indentation.increase [^\s*\{])

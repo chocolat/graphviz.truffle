@@ -1,0 +1,8 @@
+(name [PROPerty [shape=box]])
+
+(trigger
+    (tab prop))
+
+(only-in source.dot)
+
+(snippet [[shape=box]])

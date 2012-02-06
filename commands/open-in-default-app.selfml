@@ -1,0 +1,18 @@
+(trigger
+    (key [[cmd]R]))
+
+(name [Open in default app])
+
+(only-in source.dot)
+
+(input selection document)
+
+(output nothing)
+
+(save nothing)
+
+(script [#!/usr/bin/php
+<?php
+$input = "open " . escapeshellarg($_ENV[TM_FILEPATH]); // available vars
+system($input)
+?>])

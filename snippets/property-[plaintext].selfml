@@ -1,0 +1,9 @@
+(name [PROPerty [plaintext]])
+
+(trigger
+    (tab prop))
+
+(only-in source.dot)
+
+(snippet ["%{1="Machine: a"}" [ shape = plaintext ];
+])

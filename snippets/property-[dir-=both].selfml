@@ -1,0 +1,8 @@
+(name [PROPerty [dir =both]])
+
+(trigger
+    (tab dir))
+
+(only-in source.dot)
+
+(snippet [[dir=%{1="back|both"}]])

@@ -1,0 +1,22 @@
+(trigger
+    (key [[cmd]R]))
+
+(name [Open in Omnigraffle])
+
+(only-in source.dot)
+
+(input selection document)
+
+(output nothing)
+
+(save nothing)
+
+(script [#!/usr/bin/php
+<?php
+# $input = "open -a '/Applications/OmniGraffle Professional 5.app'" . escapeshellarg($_ENV[TM_FILEPATH]); // available vars
+$input = "open -b com.omnigroup.omnigrafflePro " . escapeshellarg($_ENV[TM_FILEPATH]); // available vars
+
+system($input)
+?>
+
+])

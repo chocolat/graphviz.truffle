@@ -1,0 +1,30 @@
+(trigger
+    (key [[ctrl]T]))
+
+(name Twiddle)
+
+(only-in source.dot)
+
+(input selection line)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [#!/usr/bin/php
+<?php
+if (0) {
+	echo "<pre><br>";
+	$input = "capability -> health;";
+	echo "you gave me:\n $input\n<hr>";
+}else{
+	$input = $_ENV[TM_SELECTED_TEXT]; // available vars
+}
+
+$input = trim($input, ";");
+$aInput = explode(" -> ", $input);
+
+$aTwiddle = array($aInput[1], $aInput[0]);
+$twiddle = implode(" -> ", $aTwiddle). ";";
+echo $twiddle;
+?>])

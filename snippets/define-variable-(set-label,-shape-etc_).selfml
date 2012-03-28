@@ -5,5 +5,5 @@
 
 (only-in source.dot)
 
-(snippet [%{1="varA"}  [label="%{2="%{1}"}", shape=box%{3=", URL="%{4="http://en.wikipedia.org/wiki/John de Fries"}""}]
+(snippet [%{1="varA"}  [label="%{2="%{1}"}", shape=box%{3=", URL=\"%{4="http://en.wikipedia.org/wiki/John de Fries"}\""}]
 var])
